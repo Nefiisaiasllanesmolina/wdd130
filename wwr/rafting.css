@@ -1,0 +1,41 @@
+header {
+    background-color: #D8DBE2;
+    display: flex;
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    padding-right: 40px;
+    display: contents;
+}
+
+main h1, h2, p, a {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #373F51;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    color: white;
+}
+
+.sociallinks a{
+    display: contents;
+    text-decoration: none;
+}
+
+.sociallinks img {
+    padding-right: 15px;
+}
