@@ -1,26 +1,38 @@
 header {
     background-color: #D8DBE2;
-    display: flex;
+    display: inline-flex;
     align-items: center;
+    width: 100%;
+
 }
 
 header a{
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: black;
-    padding-right: 40px;
-    display: contents;
+    padding-right: 4px;
+    display: inline-flexbox;
+    justify-content: right;
 }
 
-main h1, h2, p, a {
+main h1, h2, p, a, .hero img {
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-left: 200px;
+    padding-right: 200px;
 }
 
 .hero img {
+    justify-content: center;
     display: block;
-    width: 100%;
-    height: auto;
+    margin: auto;
+}
+
+.hero2 img {
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    padding-bottom: 30px;
 }
 
 footer {
