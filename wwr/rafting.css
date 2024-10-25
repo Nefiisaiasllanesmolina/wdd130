@@ -60,7 +60,7 @@ main h1, main h2 {
     text-align: center;
 }
 
-main .hero3 {
+main .heroherohero {
     display: flex;
     padding-right: 25px;
     padding-left: 25px;
@@ -68,7 +68,7 @@ main .hero3 {
     align-items: center;
 }
 
-main .hero3 img {
+main .heroherohero img {
     max-width: 350px;
     padding: 25px;
 }
@@ -83,7 +83,7 @@ main .hero img {
     margin: auto;
 }
 
-.hero2 div {
+.herohero div {
     display: flex;
     margin-bottom: 20px;
 }
