@@ -33,7 +33,7 @@ main h1, h2, p, a {
 
 .hero2 img {
     justify-content: center;
-    display: flex;
+    display: inline-block;
     margin: auto;
     padding-bottom: 30px;
 }
