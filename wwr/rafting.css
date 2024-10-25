@@ -77,10 +77,6 @@ main .hero img {
     max-width: 400px;
 }
 
-.hero div {
-    position: relative;
-}
-
 .hero img {
     justify-content: right;
     display: block;
