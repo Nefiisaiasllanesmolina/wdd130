@@ -29,11 +29,13 @@
                     <legend>Send your message</legend>
                     <label>Username: <input type="text" name="username"></label>
                     <label>Email: <input type="email" name="useremail"></label>
-                    <legend>Select a purpose of the message:</legend>
+                </fieldset>
+                <fieldset>
+                    <legend for="purpose">Select a purpose of the message:</legend>
                     <div>
-                        <input type="radio" name="purpose" value="generalinquiry">General Inquiry<input>
-                        <input type="radio" name="purpose" value="reservationquestion">Reservation Question<input>
-                        <input type="radio" name="purpose" value="websitesuggestion">Website Suggestion<input>
+                        <input type="radio" name="purpose" value="generalinquiry">General Inquiry</input>
+                        <input type="radio" name="purpose" value="reservationquestion">Reservation Question</input>
+                        <input type="radio" name="purpose" value="websitesuggestion">Website Suggestion</input>
                     </div>
                     <label for="message">Type your message: </label>
                     <textarea id="message" name="message" rows="4" placeholder="Type your message here, max 200 characters" maxlength="500"></textarea>
