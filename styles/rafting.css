@@ -204,6 +204,7 @@ main .hero img {
 figure .imgindex{
     max-width: 400px;
     max-height: 350px;
+    max-width: 100%;
 }
 
 .divdivfigureindex {
@@ -215,9 +216,10 @@ figure .imgindex{
 }
 
 .divdivfigureindex figure {
-    border: thin #c0c0c0 solid;
-    padding: 5px;
-    background-color: lightslategray;
+    border: thin #c0c0c0;
+    padding: 3px;
+    background-color: #E4930F;
+    
 }
 
 .svgimg {
@@ -287,7 +289,7 @@ footer {
     color: white;
 }
 
-.contactinformation a{
+.contactinformation a {
     color: white;
 }
 
@@ -298,6 +300,31 @@ footer {
 }
 
 .heroindex{
+    min-height: 600px;
+    max-height: 800px;
+    margin-bottom: 200px;
+    background-image: url("../wwr/images/paisaje.jpg");
+    background-size: cover;
+    color: #E4930F;
+    font-weight: bolder;
+}
+
+.heroindex p {
+    display: grid;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.heroindex h1 {
+    padding-top: 100px;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 50px;
+}
+
+.calltoactionone {
+    display: grid;
+    margin: auto;
     margin-bottom: 200px;
 }
 
@@ -312,10 +339,10 @@ footer {
 }
 
 .heroheroheroindeximg img{
-    max-width: 1000px;
+    max-width: 110%;
 }
 
-.calltoaction2 {
+.calltoactiontwo {
     background-color: var(--secondary-color);
     display: grid;
     justify-content: center;
@@ -332,5 +359,4 @@ footer {
     background-color: #486F52;
     font-weight: bolder;
     color: white;
-    
 }
