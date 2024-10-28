@@ -182,7 +182,7 @@ main .hero img {
     margin-top: 60px;
 }
 
-figure {
+.figure {
     border: thin #c0c0c0 solid;
     display: flex;
     flex-flow: column;
@@ -191,19 +191,37 @@ figure {
     margin: auto;
 }
 
-figure img {
+.figure img {
     max-width: 220px;
     max-height: 150px;
   }
 
-figure .contactemployee {
+.figure .contactemployee {
     max-width: 400px;
     max-height: 250px;
 }
 
 figure .imgindex{
-    max-width: 600px;
-    max-height: 400px;
+    max-width: 400px;
+    max-height: 350px;
+}
+
+.divdivfigureindex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.divdivfigureindex figure {
+    border: thin #c0c0c0 solid;
+    padding: 5px;
+    background-color: lightslategray;
+}
+
+.svgimg {
+    max-width: 70px;
 }
   
 figcaption {
@@ -279,36 +297,40 @@ footer {
     text-align: center;
 }
 
-.heroindex {
+.heroindex{
+    margin-bottom: 200px;
+}
+
+.heroheroheroindex {
     display: flex;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    margin-bottom: 150px;
+    background-color: var(--third-color);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    margin-bottom: 200px;
 }
 
-.heroindex img {
-    grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 5;
+.heroheroheroindeximg img{
+    max-width: 1000px;
 }
 
-.heroindex h1{
-    grid-column: 2;
-    grid-row: 1;
+.calltoaction2 {
+    background-color: var(--secondary-color);
+    display: grid;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 400px;
 }
 
-.heroindex h1{
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.heroindex p {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.heroindex button {
-    grid-column: 2;
-    grid-row: 1;
+.buttoncalltoaction2 {
+    width: 100px;
+    margin: auto;
+    background-color: #486F52;
+    font-weight: bolder;
+    color: white;
+    
 }
