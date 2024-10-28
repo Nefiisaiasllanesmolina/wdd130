@@ -1,7 +1,7 @@
 :root {
-    --principal-color: #D8DBE2;
+    --principal-color: #4184F3;
     --secondary-color: #373F51;
-    --third-color: #A3A9AA;
+    --third-color: #2E6C9B;
 }
 
 body {
@@ -17,9 +17,9 @@ header {
 	display: grid;
 	grid-template-columns: 120px 1fr 2fr;
 	align-items: center;
-	border-bottom: 1px solid #ccc;
 	max-width: 100%;
     background-color: var(--principal-color);
+    color: white;
 }
 
 header img {
@@ -43,13 +43,12 @@ header nav {
 
 .navigation a {
 	display: block;
-	color: black;
 	padding: 10px;
-	text-decoration: none;
+    color: white;
 }
 
 .navigation a:hover {
-	color: var(--secondary-color);
+	color: darkblue;
 	font-weight: 700;
 }
 
@@ -78,6 +77,46 @@ fieldset {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3rem;
+}
+
+label, input, button, select, textarea {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
 }
 
 main h1, main h2 {
@@ -148,10 +187,10 @@ figure {
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 220px;
+    max-width: 400px;
     margin: auto;
-  }
-  
+}
+
 figure img {
     max-width: 220px;
     max-height: 150px;
@@ -160,6 +199,11 @@ figure img {
 figure .contactemployee {
     max-width: 400px;
     max-height: 250px;
+}
+
+figure .imgindex{
+    max-width: 600px;
+    max-height: 400px;
 }
   
 figcaption {
@@ -233,4 +277,38 @@ footer {
     grid-column: 2;
     grid-row: 1;
     text-align: center;
+}
+
+.heroindex {
+    display: flex;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    margin-bottom: 150px;
+}
+
+.heroindex img {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.heroindex h1{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.heroindex h1{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.heroindex p {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.heroindex button {
+    grid-column: 2;
+    grid-row: 1;
 }
