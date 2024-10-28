@@ -1,3 +1,9 @@
+:root {
+    --principal-color: #D8DBE2;
+    --secondary-color: #373F51;
+    --third-color: #A3A9AA;
+}
+
 body {
     font-family: Georgia, 'Arial', Times, serif;
     margin: 0;
@@ -13,7 +19,7 @@ header {
 	align-items: center;
 	border-bottom: 1px solid #ccc;
 	max-width: 100%;
-    background-color: #D8DBE2;
+    background-color: var(--principal-color);
 }
 
 header img {
@@ -43,7 +49,7 @@ header nav {
 }
 
 .navigation a:hover {
-	color: #373F51;
+	color: var(--secondary-color);
 	font-weight: 700;
 }
 
@@ -78,17 +84,43 @@ main h1, main h2 {
     text-align: center;
 }
 
-main .heroherohero {
-    display: flex;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    align-items: center;
+main h2 {
+    margin-top: 40px;
 }
 
-main .heroherohero img {
+.heroherohero {
+    background-color: var(--third-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.heroherohero h2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.heroherohero .p{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.heroherohero .pp{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.heroherohero img {
     max-width: 350px;
-    padding: 25px;
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
 }
 
 main .hero img {
@@ -103,7 +135,12 @@ main .hero img {
 
 .herohero div {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
+}
+
+.herohero h2 {
+    margin-bottom: 40px;
+    margin-top: 60px;
 }
 
 figure {
@@ -126,7 +163,7 @@ figure .contactemployee {
 }
   
 figcaption {
-    background-color: #373F51;
+    background-color: var(--secondary-color);;
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
@@ -134,7 +171,7 @@ figcaption {
   }
   
 footer {
-    background-color:#373F51;
+    background-color:var(--secondary-color);;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
@@ -159,24 +196,41 @@ footer {
     padding-right: 10px;
 }
 
+.visit {
+    background-color: var(--third-color);;
+    color: white;
+}
+
+.visit h2 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
 .visitus {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20PX;
+    padding-bottom: 20px;
     align-items: center;
 }
 
 .contactinformation {
-    grid-column: 1;
-    grid-row: 1;
+    grid-column: 2;
+    grid-row: 2;
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 5px solid rgba(0, 0, 0, 0.1);
     border-radius: 0.5rem;
+    color: white;
+}
+
+.contactinformation a{
+    color: white;
 }
 
 .map {
     grid-column: 2;
     grid-row: 1;
-    max-width: 200px;
+    text-align: center;
 }
