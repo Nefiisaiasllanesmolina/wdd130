@@ -314,18 +314,19 @@ footer {
     font-weight: bolder;
 }
 
-.heroindex p {
+.heroindex h6 {
     display: grid;
     justify-content: center;
     font-size: 35px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #E4930F;
+    margin-bottom: 40px;
 }
 
 .heroindex h1 {
     padding-top: 100px;
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     font-size: 100px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #E4930F;
