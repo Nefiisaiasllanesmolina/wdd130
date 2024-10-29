@@ -250,6 +250,11 @@ footer {
     text-align: center;
 }
 
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
 .footerimg  {
     grid-column: 3;
     grid-row: 1;
