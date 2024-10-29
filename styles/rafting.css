@@ -313,6 +313,8 @@ footer {
     display: grid;
     justify-content: center;
     font-size: 35px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E4930F;
 }
 
 .heroindex h1 {
@@ -320,6 +322,8 @@ footer {
     margin-top: 0;
     margin-bottom: 50px;
     font-size: 100px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E4930F;
 }
 
 .calltoactionone {
@@ -383,7 +387,7 @@ figure .imgtrips{
 }
 
 .divdivfiguretrips div {
-    max-height: 1000;
+    max-height: 1000px;
 }
 
 .svgimgtrips {
