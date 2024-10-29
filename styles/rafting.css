@@ -213,13 +213,13 @@ figure .imgindex{
     justify-content: center;
     text-align: center;
     margin-bottom: 150px;
+    margin-top: 0px;
 }
 
 .divdivfigureindex figure {
     border: thin #c0c0c0;
     padding: 3px;
     background-color: #E4930F;
-    
 }
 
 .svgimg {
@@ -351,6 +351,7 @@ footer {
     padding-left: 40px;
     padding-right: 40px;
     max-width: 400px;
+    max-height: 800px;
 }
 
 .buttoncalltoaction2 {
@@ -358,5 +359,44 @@ footer {
     margin: auto;
     background-color: #486F52;
     font-weight: bolder;
+    color: white;
+}
+
+.divdivfiguretrips {
+    display: flex;
+    text-align: center;
+    margin-bottom: 150px;
+    margin-top: 0px;
+}
+
+figure .imgtrips{
+    max-width: 350px;
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.divdivfiguretrips figure {
+    border: thin #c0c0c0;
+    padding: 3px;
+    background-color: #E4930F;
+    max-height: 300px;
+}
+
+.divdivfiguretrips div {
+    max-height: 1000;
+}
+
+.svgimgtrips {
+    max-width: 70px;
+    max-height: 30px;
+}
+
+.divdivfiguretrips p {
+    margin: 30px;
+}
+
+.backgroundfigures {
+    background-color: #373F51;
+    margin: 10px;
     color: white;
 }
