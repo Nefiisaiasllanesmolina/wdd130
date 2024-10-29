@@ -406,6 +406,17 @@ figure .imgtrips{
 
 .backgroundfigures {
     background-color: #373F51;
-    margin: 10px;
+    margin: 20px;
     color: white;
 }
+
+.backgroundfigures input {
+    align-items: center;
+}
+
+fieldset .contactlabelone {
+    margin-right: 30px;
+
+}
+
+
