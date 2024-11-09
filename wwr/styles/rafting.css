@@ -1,3 +1,9 @@
+:root {
+    --principal-color: #4184F3;
+    --secondary-color: #373F51;
+    --third-color: #2E6C9B;
+}
+
 body {
     font-family: Georgia, 'Arial', Times, serif;
     margin: 0;
@@ -11,9 +17,9 @@ header {
 	display: grid;
 	grid-template-columns: 120px 1fr 2fr;
 	align-items: center;
-	border-bottom: 1px solid #ccc;
 	max-width: 100%;
-    background-color: #D8DBE2;
+    background-color: var(--principal-color);
+    color: white;
 }
 
 header img {
@@ -37,13 +43,12 @@ header nav {
 
 .navigation a {
 	display: block;
-	color: black;
 	padding: 10px;
-	text-decoration: none;
+    color: white;
 }
 
 .navigation a:hover {
-	color: #373F51;
+	color: darkblue;
 	font-weight: 700;
 }
 
@@ -56,21 +61,105 @@ main article {
     padding: 20px;
 }
 
+form {
+    width: 650px;
+    margin: 0 auto;
+    padding: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    background-color: #eee;
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3rem;
+}
+
+label, input, button, select, textarea {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+label {
+    text-align: left;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: 1.1rem;
+}
+
+input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 1rem;
+    background-color: navy;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+    padding: .75rem;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: darkgreen;
+}
+
 main h1, main h2 {
     text-align: center;
 }
 
-main .heroherohero {
-    display: flex;
-    padding-right: 25px;
-    padding-left: 25px;
-    padding-bottom: 25px;
-    align-items: center;
+main h2 {
+    margin-top: 40px;
 }
 
-main .heroherohero img {
+.heroherohero {
+    background-color: var(--third-color);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 25px;
+    color: white;
+}
+
+.heroherohero h2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.heroherohero .p{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.heroherohero .pp{
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.heroherohero img {
     max-width: 350px;
-    padding: 25px;
+    grid-column: 2;
+    grid-row: 2;
+    margin: auto;
 }
 
 main .hero img {
@@ -85,25 +174,60 @@ main .hero img {
 
 .herohero div {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
 }
 
-figure {
+.herohero h2 {
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+.figure {
     border: thin #c0c0c0 solid;
     display: flex;
     flex-flow: column;
     padding: 5px;
-    max-width: 220px;
+    max-width: 400px;
     margin: auto;
-  }
-  
-figure img {
+}
+
+.figure img {
     max-width: 220px;
     max-height: 150px;
   }
+
+.figure .contactemployee {
+    max-width: 400px;
+    max-height: 250px;
+}
+
+figure .imgindex{
+    max-width: 400px;
+    max-height: 350px;
+    max-width: 100%;
+}
+
+.divdivfigureindex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 150px;
+    margin-top: 0px;
+}
+
+.divdivfigureindex figure {
+    border: thin #c0c0c0;
+    padding: 3px;
+    background-color: #E4930F;
+}
+
+.svgimg {
+    max-width: 70px;
+}
   
 figcaption {
-    background-color: #373F51;
+    background-color: var(--secondary-color);;
     color: #fff;
     font: italic smaller sans-serif;
     padding: 3px;
@@ -111,15 +235,197 @@ figcaption {
   }
   
 footer {
-    background-color:#373F51;
-    display: flex;
-    align-items: center;
+    background-color:var(--secondary-color);;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
     padding: 20px;
     color: white;
+    align-items: center;
 }
 
 .footer {
-    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+#enlace {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerimg  {
+    grid-column: 3;
+    grid-row: 1;
+    margin-left: auto;
+}
+
+.sociallinks img {
+    padding-right: 10px;
+}
+
+.visit {
+    background-color: var(--third-color);
+    color: white;
+}
+
+.visit h2 {
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+
+.visitus {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-right: 20px;
+    padding-left: 20PX;
+    padding-bottom: 20px;
     align-items: center;
 }
+
+.contactinformation {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: center;
+    background-color: var(--secondary-color);
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.contactinformation a {
+    color: white;
+}
+
+.map {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+.heroindex{
+    min-height: 600px;
+    max-height: 800px;
+    margin-bottom: 200px;
+    background-image: url("../images/paisaje.jpg");
+    background-size: cover;
+    color: #E4930F;
+    font-weight: bolder;
+}
+
+.heroindex h6 {
+    display: grid;
+    justify-content: center;
+    font-size: 35px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E4930F;
+    margin-bottom: 40px;
+}
+
+.heroindex h1 {
+    padding-top: 100px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 100px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #E4930F;
+}
+
+.calltoactionone {
+    display: grid;
+    margin: auto;
+    margin-bottom: 200px;
+}
+
+.heroheroheroindex {
+    display: flex;
+    background-color: var(--third-color);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
+    margin-bottom: 200px;
+}
+
+.heroheroheroindeximg img{
+    max-width: 110%;
+}
+
+.calltoactiontwo {
+    background-color: var(--secondary-color);
+    display: grid;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 400px;
+    max-height: 800px;
+}
+
+.buttoncalltoaction2 {
+    width: 100px;
+    margin: auto;
+    background-color: #486F52;
+    font-weight: bolder;
+    color: white;
+}
+
+.divdivfiguretrips {
+    display: flex;
+    text-align: center;
+    margin-bottom: 150px;
+    margin-top: 0px;
+}
+
+figure .imgtrips{
+    max-width: 350px;
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.divdivfiguretrips figure {
+    border: thin #c0c0c0;
+    padding: 3px;
+    background-color: #E4930F;
+    max-height: 300px;
+}
+
+.divdivfiguretrips div {
+    max-height: 1000px;
+}
+
+.svgimgtrips {
+    max-width: 70px;
+    max-height: 30px;
+}
+
+.divdivfiguretrips p {
+    margin: 30px;
+}
+
+.backgroundfigures {
+    background-color: #373F51;
+    margin: 20px;
+    color: white;
+}
+
+.backgroundfigures input {
+    align-items: center;
+}
+
+fieldset .contactlabelone {
+    margin-right: 30px;
+
+}
+
 
